@@ -2,8 +2,8 @@
 layout: page
 ---
 
-# Initial commit
+### All posts
 
 {% for post in site.posts %}
- {% unless post.categories contains 'obsolete' %}* [{{ post.title }}]({{ post.url }}){% endunless %}
+ * [{{ post.title }}]({{ post.url }})
 {% endfor %}
