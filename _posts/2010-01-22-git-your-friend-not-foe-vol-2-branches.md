@@ -21,7 +21,7 @@ back, you need to remember the revision number, when you created the branch,
 and use that magical number in a complex "svn merge" command. But still,
 SVN project history remains a straight line.
 
-![SVN History](http://hades.name/media/git/svn-history.png)
+![SVN History]({{ site.media_prefix }}/git/svn-history.png)
 
 What's wrong with this way of interpreting the branch concept? Nothing. It's
 completely fine, if you don't want to work with branches. And you *should*
@@ -45,7 +45,7 @@ beginning. This is why the Git branch is simply a reference to its head (you
 can go ahead and look into the files in `.git/refs/heads` directory of any of
 your Git repositories).
 
-![Git History](http://hades.name/media/git/git-history.png)
+![Git History]({{ site.media_prefix }}/git/git-history.png)
 
 Most of the time you will have a checked-out branch (the special reference
 HEAD points to the current branch, see `.git/HEAD` for example). When you commit
@@ -92,11 +92,11 @@ branch A):
 
 - **fast-forward merge**. This happens when B is a direct descendant of A.
   This is resolved trivially: Git simply moves reference A to point to B,
-![Git Fast-Forward](http://hades.name/media/git/git-ff.png)
+![Git Fast-Forward]({{ site.media_prefix }}/git/git-ff.png)
 - **non fast-forward merge**. This covers all the remaining cases, and
   requires a merge commit to be created (merge commit is a commit with at
   least two parents).
-![Git Fast-Forward](http://hades.name/media/git/git-noff.png)
+![Git Fast-Forward]({{ site.media_prefix }}/git/git-noff.png)
 
 This differentiation is important because the fast-forward merge can be
 performed automatically without human intervention. That's why this is the

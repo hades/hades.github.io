@@ -19,7 +19,7 @@ happens so that Git already has a command that does exactly this automatically!
 It is called `git cherry-pick`. Besides fixing Mr.  Cleverhead's reputation, it
 is also quite often used for example to backport commits to release branches.
 
-![Git cherry-pick](http://hades.name/media/git/git-cherry-pick.png)
+![Git cherry-pick]({{ site.media_prefix }}/git/git-cherry-pick.png)
 
 Note, however, that this still requires Mr. Cleverhead to remove his commit
 from master. We believe in him.
@@ -31,7 +31,7 @@ rebase you just cherry-pick a series of commits on another branch**. Although
 `git-rebase` manual page is ugly and unfriendly, it tells the same basic thing:
 rebase is a series of cherry-picks, followed by a branch reset.
 
-![Git rebase](http://hades.name/media/git/git-rebase.png)
+![Git rebase]({{ site.media_prefix }}/git/git-rebase.png)
 
 Note the desaturated old commits. Despite Git changed the branch head, it
 **didn't remove these old commits**. They are still accessible through reflog,
@@ -69,7 +69,7 @@ upon Mrs. Slowrunner's work and no merge commit will be created. If you work on
 a topic branch and would like to sync it with master, simply run `git rebase
 master`. This will reduce pissed off people count too.
 
-![Git loopy and normal history](http://hades.name/media/git/git-loopy.png)
+![Git loopy and normal history]({{ site.media_prefix }}/git/git-loopy.png)
 
 **Note, however, that rebase rewrites history!** This means, that if you have
 published your work somewhere, **you shouldn't rebase it**, unless you have

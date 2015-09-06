@@ -14,7 +14,7 @@ correspond to subdirectories; etc., see `gittutorial-2(7)` for details). For
 the sake of simplicity, let's forget about trees and blobs for now, and look at
 commits only.
 
-![Git with only commits](http://hades.name/media/git/git-norefs.png)
+![Git with only commits]({{ site.media_prefix }}/git/git-norefs.png)
 
 We now have a bunch of commits that know who were their parents. We can trace
 history from any given commit back to the very beginning. But how do we know
@@ -25,7 +25,7 @@ refs: *tags* and *heads*. Tags are fixed references that mark a specific point
 in history, for example `v2.6.29`. On the contrary, heads are
 always moved to reflect the current position of project development. 
 
-![Git with refs](http://hades.name/media/git/git-refs.png)
+![Git with refs]({{ site.media_prefix }}/git/git-refs.png)
 
 Now we know what is happening in the project. But to know what is happening
 right here, right now there is a special reference called HEAD. It serves two
@@ -36,7 +36,7 @@ and extracts files from it. When you run `git commit` it creates a
 new commit object, which becomes a child of current HEAD. Normally HEAD points
 to one of the heads, so everything works out just fine. 
 
-![Git with branch HEAD](http://hades.name/media/git/git-head.png)
+![Git with branch HEAD]({{ site.media_prefix }}/git/git-head.png)
 
 But if you checkout a specific commit instead of a branch, your HEAD starts
 pointing at this commit. This is referred to as *detached head* and you may be
@@ -44,7 +44,7 @@ told that *you are not on a branch* (git branch says "(no branch)"). This is
 perfectly fine, but if you commit anything to it, your commits won't have a
 known ref, so if you checkout another branch, you can lose them. 
 
-![Git with detached HEAD](http://hades.name/media/git/git-detached.png)
+![Git with detached HEAD]({{ site.media_prefix }}/git/git-detached.png)
 
 Having said about committing, can't help stopping by the process of committing
 itself.  You may already know that the Git's "add" operation differs from

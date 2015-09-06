@@ -25,7 +25,7 @@ thing SVN client is able to do is compare your files with the latest
 revision and send this diff to the server. In SVN communications are possible
 only between The Repository and the puny client with the working copy.
 
-![SVN](http://hades.name/media/git/svn.png)
+![SVN]({{ site.media_prefix }}/git/svn.png)
 
 In contrast, Git does not differentiate His Holiness The Repository from mere
 mortal working copies. Everyone gets a repository of his own. Everyone can do
@@ -95,7 +95,7 @@ transfer it to the boxes, and apply it. Everything manually. So you most
 probably wouldn't bother at all and would discover that nasty bug that occurs
 only on 64-bit computers only in two month and lose your job.
 
-![Git](http://hades.name/media/git/git.png)
+![Git]({{ site.media_prefix }}/git/git.png)
 
 Finally, the concept of "central repository" may be eliminated altogether.
 Every developer gets a "public" repository where he keeps the stuff he is not
