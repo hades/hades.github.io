@@ -1,5 +1,6 @@
 ---
 layout: post
+category: obsolete
 ---
 I’ve been translating <a href="http://quassel-irc.org/">Quassel</a> into Russian for some time now. That’s in spite of my despise to all the localized software. I just thought it would be good to popularize a project that is almost, <a href="http://hades.name/blog/2009/04/08/irssi-vs-quassel/">but not quite</a>, entirely like the best <span class="caps">IRC</span> client ever. I don’t know if the translation or a <a href="http://www.linux.org.ru/view-message.jsp?msgid=3515644">news post</a> on one of the major Russian Linux users community sites somehow helped it, but now I see more and more Russian <span class="caps">IRC</span> users using Quassel.
 

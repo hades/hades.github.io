@@ -1,40 +1,44 @@
 ---
 layout: post
 ---
-If you want to install Gentoo you should read the [Gentoo Handbook](http://www.gentoo.org/doc/en/handbook/index.xml). However, if you (like myself) have already installed Gentoo for a couple (thousand) times, you know more or less everything that has to be done, but just need a list of things not to forget. So here it is:
+If you want to install Gentoo you should read the [Gentoo
+Handbook](http://www.gentoo.org/doc/en/handbook/index.xml). However, if you
+(like myself) have already installed Gentoo for a couple (thousand) times, you
+know more or less everything that has to be done, but just need a list of
+things not to forget. So here it is:
 
-* <code>fdisk</code> # create the partitions you want
-* <code>mkfs</code> # create the root filesystem
-* <code>mount *root* /mnt/gentoo</code>
-* <code>cd /mnt/gentoo</code>
-* <code>wget -O- ftp://mirror.switch.ch/mirror/gentoo/releases/x86/current-stage3/stage3-i686-*.tar.bz2 | tar xj</code>
-* <code>cd usr</code>
-* <code>wget -O- ftp://mirror.switch.ch/mirror/gentoo/snapshots/portage-latest.tar.bz2 | tar xj</code>
-* <code>cd /mnt/gentoo</code>
-* <code>mount -t proc proc proc</code>
-* <code>mount --bind /dev dev</code>
-* <code>cp -L /etc/resolv.conf etc/</code>
-* <code>chroot . /bin/bash</code>
-* <code>env-update; source /etc/profile</code>
-* <code>emerge --sync</code>
-* <code>eselect profile set default/linux/x86</code>
-* <code>vim /etc/make.conf</code> # setup USE, CFLAGS, CXXFLAGS, MAKEOPTS
-* <code>vim /etc/locale.gen</code> # setup locales
-* <code>locale-gen</code>
-* <code>emerge gentoo-sources</code> # configure, build and install the kernel
-* <code>vim /etc/fstab</code> # setup the partitions, don't forget root, swap
-* <code>vim /etc/conf.d/hostname</code> # setup hostname
-* <code>vim /etc/hosts</code> # add the hostname to localhost line
-* <code>passwd</code>
-* <code>vim /etc/conf.d/clock; emerge --config timezone-data</code> # setup timezone
-* <code>emerge syslog-ng vixie-cron mlocate</code>
-* <code>rc-update add syslog-ng default</code>
-* <code>rc-update add vixie-cron default</code>
-* <code>emerge reiserfsprogs xfsprogs jfsutils e2fsprogs</code> # or whatever set of FS you have
-* <code>emerge dhcpcd</code>
-* <code>emerge grub</code>
-* <code>vim /boot/grub/grub.conf</code> # configure Grub
-* <code>grep -v rootfs /proc/mounts > /etc/mtab</code>
-* <code>grub</code>
+* `fdisk` # create the partitions you want
+* `mkfs` # create the root filesystem
+* `mount *root* /mnt/gentoo`
+* `cd /mnt/gentoo`
+* `wget -O- ftp://mirror.switch.ch/mirror/gentoo/releases/x86/current-stage3/stage3-i686-*.tar.bz2 | tar xj`
+* `cd usr`
+* `wget -O- ftp://mirror.switch.ch/mirror/gentoo/snapshots/portage-latest.tar.bz2 | tar xj`
+* `cd /mnt/gentoo`
+* `mount -t proc proc proc`
+* `mount --bind /dev dev`
+* `cp -L /etc/resolv.conf etc/`
+* `chroot . /bin/bash`
+* `env-update; source /etc/profile`
+* `emerge --sync`
+* `eselect profile set default/linux/x86`
+* `vim /etc/make.conf` # setup USE, CFLAGS, CXXFLAGS, MAKEOPTS
+* `vim /etc/locale.gen` # setup locales
+* `locale-gen`
+* `emerge gentoo-sources` # configure, build and install the kernel
+* `vim /etc/fstab` # setup the partitions, don't forget root, swap
+* `vim /etc/conf.d/hostname` # setup hostname
+* `vim /etc/hosts` # add the hostname to localhost line
+* `passwd`
+* `vim /etc/conf.d/clock; emerge --config timezone-data` # setup timezone
+* `emerge syslog-ng vixie-cron mlocate`
+* `rc-update add syslog-ng default`
+* `rc-update add vixie-cron default`
+* `emerge reiserfsprogs xfsprogs jfsutils e2fsprogs` # or whatever set of FS you have
+* `emerge dhcpcd`
+* `emerge grub`
+* `vim /boot/grub/grub.conf` # configure Grub
+* `grep -v rootfs /proc/mounts > /etc/mtab`
+* `grub`
 
 Now reboot and smell the ashes!

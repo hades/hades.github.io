@@ -1,0 +1,10 @@
+---
+layout: post
+---
+{{ content }}
+<h3>Git is Your Friend not a Foe:</h3>
+<ul>
+{% for post in site.posts %}
+ {% if post.categories contains 'git_fnaf' %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}
+{% endfor %}
+</ul>
