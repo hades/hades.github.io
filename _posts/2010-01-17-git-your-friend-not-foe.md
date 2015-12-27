@@ -1,16 +1,16 @@
 ---
-layout: post
+layout: post_gfnaf
+title: "Git Is Your Friend not a Foe v1: Distributed"
+categories:
+  - git
+  - git_fnaf
 ---
-Recently, I've been preaching <a href="http://git-scm.com">Git</a> to everyone
-that use the inferior version control software (like SVN or, pardon me, CVS).
-But somewhy the main obstacle I see in these people is that they are *so* used
-to SVN workflow that they don't see the magnificence and flexibility Git
-offers. They mostly are able to read
-<a href="http://whygitisbetterthanx.com/">http://whygitisbetterthanx.com/</a> and
-acknowledge the fact that more and more projects have been switching over to
-it.
+Recently, I've been preaching [Git](http://git-scm.com) to everyone that use
+the inferior version control software (like SVN or, pardon me, CVS).  But
+somewhy the main obstacle I see in these people is that they are *so* used to
+SVN workflow that they don't see the magnificence and flexibility Git offers.
 
-But still, many of them don't grasp the benefits Git gives, falling back to
+Many of these people don't grasp the benefits Git gives, falling back to
 classic centralized edit–commit-to-server workflow of SVN and whining that
 "this stupid Git didn't commit changes in that file; this stupid Git complains
 about 'non fast-forward'; this stupid Git ate my kittens; etc.". I would like
@@ -25,7 +25,7 @@ thing SVN client is able to do is compare your files with the latest
 revision and send this diff to the server. In SVN communications are possible
 only between The Repository and the puny client with the working copy.
 
-![SVN](http://hades.name/media/git/svn.png)
+![SVN]({{ site.media_prefix }}/git/svn.png)
 
 In contrast, Git does not differentiate His Holiness The Repository from mere
 mortal working copies. Everyone gets a repository of his own. Everyone can do
@@ -45,11 +45,11 @@ at first, but it pays off at the end. You'll thank me later.
 So, back to the repository size. Yes, Git requires you to have the whole
 repository on your person. Yes, it does increase your project directory size.
 But Git is extremely efficient in packing stuff, so that increase should not
-hurt you. In fact, the whole Git repository (with full project history) <a
-href="http://blog.emptyway.com/2008/03/31/using-git-for-rubyjruby-development/">is
-known to take less space than an SVN checkout</a>. And SVN's checkout process
-is *so* inefficient, that for most projects Git clone takes less time than SVN
-checkout.
+hurt you. In fact, the whole Git repository (with full project history) [is
+known to take less space than an SVN
+checkout](http://blog.emptyway.com/2008/03/31/using-git-for-rubyjruby-development/).
+And SVN's checkout process is *so* inefficient, that for most projects Git
+clone takes less time than SVN checkout.
 
 Okay, now the next question is: what is so cool about having the whole
 repository along with project files? Well, the most basic advantage is that
@@ -95,7 +95,7 @@ transfer it to the boxes, and apply it. Everything manually. So you most
 probably wouldn't bother at all and would discover that nasty bug that occurs
 only on 64-bit computers only in two month and lose your job.
 
-![Git](http://hades.name/media/git/git.png)
+![Git]({{ site.media_prefix }}/git/git.png)
 
 Finally, the concept of "central repository" may be eliminated altogether.
 Every developer gets a "public" repository where he keeps the stuff he is not
@@ -111,17 +111,13 @@ homosexuals, 'git pull git://acmesoftware.com/~dave/shiny.git crosser', love,
 Dave". Sam copies-and-pastes the command and gets a new branch, tests it, and
 then pushes to his blessed public repository.
 
-For large projects (for example, <a href="http://kernel.org">Linux</a>) lead
+For large projects (for example, [Linux](http://kernel.org)) lead
 developer has several people responsible for specific subsystems (the so
 called Lieutenants). They collect the small commits from their fellow
 developers, test them and forward to Linus, who aggregates all the good stuff
 in his own repository. This ensures that the code is seen by at least one
 other person, before it gets stored in the repository and completely
 forgotten.
-
-The aforementioned site has a <a
-href="http://whygitisbetterthanx.com/#any-workflow">nice section about
-different Git workflows</a> (see under **Any workflow**) with pictures.
 
 Also, the nice side-effect of Git being a distributed system is that every
 repository is essentially a backup of the main repository. It doesn't mean you
@@ -131,14 +127,3 @@ not only the recent project files.
 
 There are some more things that confuse novice users, especially branches and
 staging area. I shall cover them in following posts, stay tuned!
-
-Next posts:
-
-- <a href="http://hades.name/blog/2010/01/22/git-your-friend-not-foe-vol-2-branches/">Volume
-  2, on branches and merging</a>
-- <a href="http://hades.name/blog/2010/01/28/git-your-friend-not-foe-vol-3-refs-and-index/">Volume
-  3, on refs and staging area</a>
-- <a href="http://hades.name/blog/2010/03/03/git-your-friend-not-foe-vol-4-rebasing/">Volume
-  4, on cherry-picking and rebasing</a>
-
-<a href="http://hades.name/blog/tag/git/">All posts about Git</a>

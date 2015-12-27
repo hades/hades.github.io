@@ -7,6 +7,10 @@ description: >
 url: "https://hades.github.io" # the base hostname & protocol for your site
 twitter_username: dr_lepper
 github_username:  hades
+permalink: "/:year/:month/:title"
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
+
+media_prefix: '/media'

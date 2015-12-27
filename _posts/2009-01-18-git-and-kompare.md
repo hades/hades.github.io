@@ -1,18 +1,22 @@
 ---
 layout: post
+title: Git and Kompare
 ---
-Everyone knows, that <a href="http://git-scm.com">Git</a> is the best version control system, and <a href="http://kde.org">KDE</a> is the best desktop environment out there.
+Everyone knows, that [Git](https://git-scm.com) is the best version control
+system, and [KDE](https://kde.org) is the best desktop environment out there.
 
-So recently I had a nice idea: wouldn’t it be nice if git diffs could be viewed by KDE file comparison and diff viewer tool called <a href="http://www.caffeinated.me.uk/kompare/">Kompare</a>? Sure it would.
+So recently I had a nice idea: wouldn’t it be nice if git diffs could be viewed
+by KDE file comparison and diff viewer tool called
+[Kompare](http://www.caffeinated.me.uk/kompare/)? Sure it would.
 
-Still don’t know if it possible by editing Git configuration only, but I did a little bash function that does it (put in your .bashrc):
+Still don’t know if it possible by editing Git configuration only, but I did a
+little bash function that does it (put in your .bashrc):
 
-<div class="code">kg(){<br />
-&nbsp;&nbsp;file=`mktemp`<br />
-&nbsp;&nbsp;git "$@" > $file<br />
-&nbsp;&nbsp;kompare $file<br />
-&nbsp;&nbsp;rm $file<br />
-}</div>
+    kg(){
+      file=`mktemp`
+      git "$@" > $file
+      kompare $file
+      rm $file
+    }
 
-
-Use as follows: <code>kg show -v</code>, or <code>kg diff HEAD^</code>.
+Use as follows: ```kg show -v```, or ```kg diff HEAD^```.
