@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Your OWn Git Hosting: Gitolite"
+title: "Your Own Git Hosting: Gitolite"
 ---
 So, let's start with setting up
 [gitolite](https://github.com/sitaramc/gitolite) to host your repositories and
