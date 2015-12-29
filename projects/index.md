@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: page
 title: "Projects"
+important: True
 ---
 Have a look at my git repository to see some of the things I've been working on
 just for fun:

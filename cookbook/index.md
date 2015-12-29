@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Cookbook"
 ---
 Here I gather some valuable code snippets and recipes.

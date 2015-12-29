@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Bird"
 ---
 bird is a simple interactive console Twitter client.

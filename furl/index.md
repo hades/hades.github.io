@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "furl"
 ---
 furl is a set of libraries and tools to collect and dispatch URLs mentioned in
