@@ -11,13 +11,9 @@ Note that the code is largely undocumented, and most probably won't even work.
 
 There are more detailed descriptions for some of the projects:
 
- * [Bird](/bird/), a simple, extendable Python client for Twitter.
- * [vbox-runner](/vbox-runner/), a KDE KRunner applet that launches VirtualBox
-   virtual machines,
+ * [Bird](/bird/), a simple, extendable Python client for Twitter,
  * [Furl](/furl/), a universal URL collector,
- * [Watchbot](/watchbot/), a monitor for services and servers,
- * [Euterpe](/euterpe/), a music synchronization framework,
- * [Aeacus](/aeacus/), my overlay for Gentoo Linux.
+ * [Euterpe](/euterpe/), a music synchronization framework.
 
 There is also a [CookBook](/cookbook/) with some code snippets and whatnot.
 
