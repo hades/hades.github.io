@@ -5,7 +5,6 @@ description: >
   I am hades, a software engineer. This is the site about all the things
   I found too boring not to write about.
 url: "https://hades.github.io" # the base hostname & protocol for your site
-twitter_username: dr_lepper
 github_username:  hades
 permalink: "/:year/:month/:title"
 
